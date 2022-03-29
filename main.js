@@ -83,3 +83,16 @@ function draw(){
     stroke("red");
     circle(rightWristX, rightWristY, 30);
   }
+
+if(game_status == "start"){
+    document.getElementById("status").innerHTML = "Game Is Loaded";
+     paddleInCanvas();
+    fill(250,0,0);
+    stroke(0,0,250);
+    strokeWeight(0.5);
+    paddle1Y = rightWristY;
+    rect(paddle1X,paddle1Y,paddle1,paddle1Height,100);
+    
+    fill("#FFA500");
+    stroke("#FFA500");
+    var paddle2y = 
